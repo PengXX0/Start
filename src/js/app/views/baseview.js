@@ -15,7 +15,7 @@ define(['jquery', 'backbone', 'templates', 'slick'],
         App.Views.Init = App.Extensions.view.extend({
             el: $("body"),
             template: tpl.header,
-            initialize: function (options) { this.$el.find("section.main").html(""); },
+            initialize: function (options) { this.$el.find("section.main").html(''); },
             events: {
                 "touchend .ad-bottom,.ad-top": "swichAdtype",
                 "touchend .right.share,.share-panel .cancle": "share",
@@ -35,7 +35,7 @@ define(['jquery', 'backbone', 'templates', 'slick'],
                 _.next.render({ page: true, args: args });
                 this.$el.find(".main").append(_.next.$el);
                 if (view.onshow) { view.onshow(); }
-                _.current = _.next; 
+                _.current = _.next;
                 this.bindHover();
             },
             swichAdtype: function (e) {
@@ -68,7 +68,7 @@ define(['jquery', 'backbone', 'templates', 'slick'],
                     window.history.go(-1);
                 }
             },
-            bindHover: function () {
+            bindHover: function () {//绑定hover效果
                 var hoverSelectors = [".share-panel .container>div", ".share-panel .cancle", ".back a", ".right.save", ".right.share"];
                 $(hoverSelectors.join(",")).bind("touchstart", function () { $(this).attr("style", "background-color:#e9e8ed"); })
                     .bind("touchend", function () { $(this).removeAttr("style"); });
