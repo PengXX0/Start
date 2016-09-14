@@ -1,2 +1,2 @@
 # Start
-自己写的一个关于Backbonejs的小案例，git test...
+自己写的一个关于Backbonejs的小案例。
