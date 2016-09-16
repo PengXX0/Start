@@ -42,7 +42,6 @@ define(['jquery', 'backbone', 'templates', 'slick'],
             },
             turn: common.turn,
             fileUpload: common.fileUpload
-        });
-        
+        });        
         return App.Views.Topad;
     });
