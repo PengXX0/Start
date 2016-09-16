@@ -40,7 +40,7 @@ define(['backbone'],
             },
             preview: function (args) {
                 document.title = "广告预览";
-                require(["App/views/preview"], function (view) {
+                require(["app/views/preview"], function (view) {
                     App.view.run(new view(args), args);
                 });
             }
