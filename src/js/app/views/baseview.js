@@ -34,7 +34,7 @@ define(['jquery', 'backbone', 'templates', 'slick'],
                 if (_.previous) { _.previous.remove(); }
                 _.next.render({ page: true, args: args });
                 this.$el.find(".main").append(_.next.$el);
-                if (view.onshow) { view.onshow(); }
+                if (view.onshow) { view.onshow.apply(this, args); }
                 _.current = _.next;
                 this.bindHover();
             },
