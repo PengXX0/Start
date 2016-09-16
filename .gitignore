@@ -1,5 +1,4 @@
 node_modules
 /bs-config.json
-/privatekey.ppk
 develop
 production
