@@ -91,7 +91,11 @@ gulp.task('js', function () {
         //.pipe(concat('all.js'))
         //.pipe(gulp.dest('dest/js'))
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(uglify())
+        .pipe(uglify({
+            mangle: true,
+            compress: true,
+            preserveComments: 'license'
+        }))
         .pipe(sourcemaps.write('.', {
             debug: config.debug,
             charset: "utf8",

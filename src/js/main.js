@@ -34,7 +34,6 @@ require.config({
     }
 });
 window.App = { Views: {}, Router: {}, Extensions: {}, Collections: {}, Models: {} };
-console.log("hello world");
 require(['router'],
     function (router) { router.Start(); },
     function (err) {
