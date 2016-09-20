@@ -17,7 +17,7 @@ define(['backbone'],
                 // if (!loggedIn) { goToLogin(); return false; }
                 App.route.currentName = name;
                 args.push(parseQueryString(args.pop()));
-                if (callback) { callback.apply(this, args); }
+                if (callback) { callback(); }
             },
             routes: {
                 "": "home",
