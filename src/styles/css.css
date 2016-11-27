@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+
 /*reset*/
 div, span, object, iframe, img, table, caption, thead, tbody, tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu, nav, footer, header, section, summary, mark, audio, video 
 {border: 0;margin: 0;padding: 0;}
@@ -20,6 +21,8 @@ header .title.ad-type{width: 45%;height: 35px;  border: 1.5px #33bff8 solid;bord
 .ad-type .ad-bottom a,.ad-type .ad-top a{width: 50%;line-height: 35px;text-align: center;float: left;color:#33bff8}
 .ad-type .active a{background:#33bff8;color: #fff;}
 header .title.save{width:40px;height: 32px;}
+
+
 
 section.main{width:100%;height:145px;padding-top: 55px;}
 .main .type{width: 78%;height:100%; margin: 0 auto;font-size: 14px;}
